@@ -6,4 +6,9 @@ __version__ = "0.1.2.post1"
 
 from .enums import KernelBackendMoE
 from .functional import moe_general_routing_inputs, moe_TC_softmax_topk_layer
+from .megatron_adapter import (
+    SonicMoEExperts,
+    SonicMoEExpertsForMcore,
+    build_sonic_moe_experts_from_config,
+)
 from .moe import MoE
